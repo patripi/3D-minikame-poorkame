@@ -24,21 +24,35 @@
 // probado con AI Companion
 //
 // ********************************************************
-// 26-nov-16: añado soporte control mando PS2X
-// Rutinas de movimientos completos
+// 26-nov-16: añado soporte control mando PS2X.
+// Rutinas de movimientos completos. 
 // ********************************************************
 // 27-nov-16: añado soporte movimiento por miniKame de Javi
 // con los osciladores (visto tutorial Obijuan octosnake).
-// Rutinas de movimiento completos
+// Rutinas de movimiento completos.
 // ********************************************************
 // 27-nov-16: añado en App Android lógica para acceder al
 // soporte movimiento basado en osciladores.
-// Rutinas de movimiento completos
+// Rutinas de movimiento completos.
 //
 // ********************************************************
 // Mejoras pendientes:
 //    - gestión de errores
 //
+
+//  Mapeo de pines a servos:
+//   _________   ________   _________
+//  |(2)______)(0)      (1)(______(3)|
+//  |__|       |   KAME   |       |__|
+//             |          |
+//             |          |
+//             |          |
+//   _________ |          | _________
+//  |(6)______)(4)______(5)(______(7)|
+//  |__|                          |__|
+//                  /\
+//                  |
+//             USBs |
 
 #include <Servo.h>
 #include <miniKamePPF.h>
